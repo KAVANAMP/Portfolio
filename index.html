@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kavana M P — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0f172a">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home">Kavana<span class="dot"></span></a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="toggle navigation">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn-outline" href="assets/Kavana_CV.pdf" download>Download Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero" data-aos="fade-up">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi — I'm <span class="accent">Kavana M P</span></h1>
+          <p class="type-target">
+  Full Stack Developer • Java Developer • Web Developer
+</p>
+          <p class="lead">
+            Aspiring Software Engineer & Web Developer. Computer Science & Engineering Student at
+            <strong>Shree Devi Institute of Technology</strong>.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn-ghost" href="assets/Kavana_CV.pdf" download>Download Resume</a>
+          </div>
+          <div class="meta">
+            <a href="https://www.linkedin.com/in/kavana-p-acharya-480617339" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="https://github.com/KAVANAMP" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="mailto:kavanapacharya@gmail.com">kavanapacharya@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="hero-photo" data-aos="zoom-in">
+          <img src="assets/profile.jpg" alt="Kavana M P — profile photo" onerror="this.src='https://via.placeholder.com/320x320?text=Profile'">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div>
+            <p>
+              I'm a Computer Science and Engineering student at <strong>Shree Devi Institute of Technology</strong>, Mangalore.
+              I have a strong foundation in web development anda passion software engineering.I enjoy building responsive web applications using HTML, CSS, JavaScript, and React, and continuously improving my technical and problem-solving skills. I'm seeking full-time roles where I can apply my problem-solving skills and grow as a software engineer.
+            </p>
+            <ul class="about-list">
+              <li><strong>Education:</strong> B.E. in Computer Science & Engineering — CGPA 8.63</li>
+              <li><strong>Pre-U:</strong> PCMB — 92.33%</li>
+              <li><strong>High School:</strong> 90.4%</li>
+            </ul>
+          </div>
+          <div class="card small-card">
+            <h3>Quick Facts</h3>
+            <p><strong>Location:</strong> India</p>
+            <p><strong>Open to:</strong>Full time roles</p>
+            <p><strong>Hobbies:</strong> Drawing, Reading, Cooking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt" data-aos="fade-up">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-col">
+            <h4>Web Development</h4>
+            <ul class="skill-list">
+              <li>HTML • CSS • JavaScript • ReactJS</li>
+              <li>Responsive Design • Accessibility</li>
+            </ul>
+            <h4>Languages</h4>
+            <ul class="skill-list">
+              <li>Java • C • Python</li>
+            </ul>
+          </div>
+
+          <div class="skill-col">
+            <h4>Databases & Tools</h4>
+            <ul class="skill-list">
+              <li>MySQL</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+
+          <div class="skill-bars">
+            <div class="bar">
+              <label>HTML/CSS</label>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+            <div class="bar">
+              <label>JavaScript / React</label>
+              <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+            </div>
+            <div class="bar">
+              <label>Java / C</label>
+              <div class="bar-track"><div class="bar-fill" style="width:75%"></div></div>
+            </div>
+            <div class="bar">
+              <label>SQL</label>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card" data-aos="fade-up">
+            <img src="assets/grama.jpeg" alt="Grama Angana" onerror="this.src='https://via.placeholder.com/600x340?text=Ecommerce+Project'">
+            <div class="project-body">
+              <h3>Grama Angana</h3>
+
+<p>
+  Developed a Community Hall Management System that enables users
+  to browse halls, make bookings, manage events, and track
+  reservations. Implemented role-based access for administrators
+  and users with Firebase backend integration.
+</p>
+
+<div class="project-meta">
+  <span>Android • Kotlin • Firebase</span>
+
+  <div class="project-buttons">
+    <a
+      href="https://github.com/KAVANAMP/Grama-Angana"
+      target="_blank"
+      class="btn-sm"
+    >
+      View Code
+    </a>
+
+    <button class="btn-sm" data-project="grama">
+      Details
+    </button>
+  </div>
+</div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+  <img src="assets/braille.png" 
+       alt="Braille To Text & Voice Translator" 
+       onerror="this.src='https://via.placeholder.com/600x340?text=Braille+Translator+Project'">
+
+  <div class="project-body">
+    <h3>Braille To Text & Voice Translator</h3>
+    <p>
+      Developed an AI-based assistive application that detects Braille dots from images,
+      converts them into readable text, and generates voice output using image processing
+      and text-to-speech technologies to enhance accessibility for visually impaired users.
+    </p>
+
+   <div class="project-meta">
+  <span>Python • Open CV • TTS</span>
+
+  <div class="project-buttons">
+    <a
+      href="https://github.com/KAVANAMP/Braille-To-Text-and-voice-Translator"
+      target="_blank"
+      class="btn-sm"
+    >
+      View Code
+    </a>
+
+    <button class="btn-sm" data-project="braille">
+  Details
+</button>
+  </div>
+</div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section alt" data-aos="fade-up">
+      <div class="container">
+        <h2>Certifications & Workshops</h2>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <h4>Frontend Web Development — Infosys Springboard</h4>
+            <p>Completed certification focused on modern frontend skills and responsive web development.</p>
+          </div>
+
+          <div class="cert-card">
+            <h4>Machine Learning — Simplilearn</h4>
+            <p>Training program covering basics of ML and practical projects.</p>
+          </div>
+
+          <div class="cert-card">
+            <h4>Introduction to Gemini for Google Workspace — Google Cloud</h4>
+          </div>
+
+          <div class="cert-card">
+            <h4>Full Stack Development Workshop — Wayspire</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Let’s build something amazing together.</h3>
+            <p>I’m currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!.</p>
+            <p><strong>Email:</strong> <a href="mailto:kavanapacharya@gmail.com">kavanapacharya@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 8431628917</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kavana-p-acharya-480617339" target="_blank">Kavana P Acharya</a></p>
+          </div>
+
+          <form class="card contact-form" action="mailto:kavanapacharya@gmail.com" method="get" enctype="text/plain">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button class="btn" type="submit">Send Email</button>
+              <a class="btn-ghost" href="assets/Kavana_CV.pdf" download>Download Resume</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    </footer>
+    <footer class="footer">
+  <div class="container">
+    <h3>Kavana M P</h3>
+
+    <p>
+      Full Stack Developer | Java | React | MySQL
+    </p>
+
+    <div class="footer-links">
+      <a href="https://github.com/KAVANAMP" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/kavana-p-acharya-480617339" target="_blank">
+        LinkedIn
+      </a>
+
+      <a href="mailto:kavanapacharya@gmail.com">
+        Email
+      </a>
+    </div>
+
+    <p class="copyright">
+      © 2026 Kavana M P. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+  </main>
+
+  <!-- Project Modal (hidden) -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
