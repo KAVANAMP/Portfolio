@@ -345,15 +345,16 @@ body{
   background:var(--card);
   border-radius:12px;
   overflow:hidden;
-  border:1px solid rgba(255,255,255,0.03);
-  transition:transform var(--transition), box-shadow var(--transition);
+  border:1px solid rgba(255,255,255,0.06);
+  transition:transform var(--transition), border-color var(--transition), box-shadow var(--transition);
   display:flex;
   flex-direction:column;
 }
 
 .project-card:hover{
   transform:translateY(-8px);
-  box-shadow:0 15px 40px rgba(0,0,0,0.3);
+  border-color:rgba(56,189,248,0.35);
+  box-shadow:0 15px 40px rgba(56,189,248,0.1);
 }
 .project-card img{
   width:100%;
@@ -380,7 +381,18 @@ body{
 
 /* CERTS */
 .cert-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1rem}
-.cert-card{background:var(--glass); padding:0.9rem; border-radius:10px; border:1px solid rgba(255,255,255,0.02)}
+.cert-card{
+  background:var(--glass);
+  padding:0.9rem;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.06);
+  transition:transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+.cert-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(56,189,248,0.35);
+  box-shadow:0 12px 30px rgba(56,189,248,0.08);
+}
 .cert-card h4{font-size:0.95rem; margin-bottom:0.4rem}
 .cert-card p{color:var(--muted); font-size:0.88rem}
 
