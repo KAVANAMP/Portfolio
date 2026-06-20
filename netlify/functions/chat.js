@@ -1,7 +1,7 @@
 // netlify/functions/chat.js
 //
 // This function runs on Netlify's servers, NOT in the visitor's browser.
-// It keeps your Anthropic API key secret while letting the portfolio's
+// It keeps your Gemini API key secret while letting the portfolio's
 // chat widget ask questions about you.
 
 const SYSTEM_PROMPT = `You are a helpful assistant embedded on Kavana M P's portfolio website. You answer questions visitors (mostly recruiters and hiring managers) ask about Kavana, based ONLY on the information below. Be concise, friendly, and professional. If asked something not covered here, say you don't have that information and suggest they reach out to Kavana directly at kavanapacharya@gmail.com.
@@ -37,6 +37,9 @@ CONTACT:
 
 Keep answers short (2-4 sentences) unless the visitor asks for detail. Never invent information not listed here.`;
 
+const GEMINI_MODEL = "gemini-2.5-flash-lite";
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
+
 exports.handler = async (event) => {
   // Only allow POST requests
   if (event.httpMethod !== "POST") {
@@ -67,32 +70,36 @@ exports.handler = async (event) => {
     // Build conversation history (keep last 6 turns max to control token usage)
     const safeHistory = Array.isArray(history) ? history.slice(-6) : [];
 
-    const messages = [
+    // Gemini uses "user" / "model" roles (not "assistant"), and a
+    // "contents" array instead of "messages"
+    const contents = [
       ...safeHistory.map((m) => ({
-        role: m.role === "assistant" ? "assistant" : "user",
-        content: String(m.content).slice(0, 500),
+        role: m.role === "assistant" ? "model" : "user",
+        parts: [{ text: String(m.content).slice(0, 500) }],
       })),
-      { role: "user", content: message },
+      { role: "user", parts: [{ text: message }] },
     ];
 
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": process.env.ANTHROPIC_API_KEY,
-        "anthropic-version": "2023-06-01",
-      },
-      body: JSON.stringify({
-        model: "claude-3-5-haiku-20241022",
-        max_tokens: 400,
-        system: SYSTEM_PROMPT,
-        messages: messages,
-      }),
-    });
+    const response = await fetch(
+      `${GEMINI_URL}?key=${process.env.GEMINI_API_KEY}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          system_instruction: {
+            parts: [{ text: SYSTEM_PROMPT }],
+          },
+          contents: contents,
+          generationConfig: {
+            maxOutputTokens: 400,
+          },
+        }),
+      }
+    );
 
     if (!response.ok) {
       const errText = await response.text();
-      console.error("Anthropic API error:", errText);
+      console.error("Gemini API error:", errText);
       return {
         statusCode: 502,
         body: JSON.stringify({ error: "AI service error" }),
@@ -100,7 +107,9 @@ exports.handler = async (event) => {
     }
 
     const data = await response.json();
-    const reply = data.content?.[0]?.text || "Sorry, I couldn't generate a response.";
+    const reply =
+      data.candidates?.[0]?.content?.parts?.[0]?.text ||
+      "Sorry, I couldn't generate a response.";
 
     return {
       statusCode: 200,
