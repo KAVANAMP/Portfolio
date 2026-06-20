@@ -330,6 +330,15 @@ body{
 .timeline-content .chip-row{margin-top:0}
 .timeline-content .chip{font-size:0.78rem; padding:0.3rem 0.65rem}
 
+/* SECTION FRAME (bordered container wrapping Projects / Certifications) */
+.section-frame{
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:18px;
+  padding:1.6rem;
+  background:linear-gradient(160deg, rgba(56,189,248,0.04), rgba(167,139,250,0.02));
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
 /* PROJECTS */
 .projects-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1.2rem}
 .project-card{
@@ -475,6 +484,8 @@ body{
   .project-buttons{ width:100%; justify-content:flex-start; }
 
   .contact-grid{ grid-template-columns:1fr; }
+
+  .section-frame{ padding:1.1rem; border-radius:14px; }
 
   .timeline{ padding-left:1.3rem; }
   .timeline-dot{ left:-1.3rem; }
