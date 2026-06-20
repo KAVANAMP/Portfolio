@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kavana M P — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0f172a">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home">Kavana<span class="dot"></span></a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="toggle navigation">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero" data-aos="fade-up">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi — I'm <span class="accent">Kavana M P</span></h1>
+          <p class="type-target"></p>
+          <p class="lead">
+            Computer Science & Engineering graduate from
+            <strong>Shree Devi Institute of Technology</strong>, building accessible
+            web and Android experiences.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn-ghost" href="assets/Kavana_CV.pdf" download>Download Resume</a>
+          </div>
+          <div class="meta">
+            <a class="meta-link" href="https://www.linkedin.com/in/kavana-p-acharya-480617339" target="_blank" rel="noopener">
+              <span class="meta-icon">in</span> LinkedIn
+            </a>
+            <a class="meta-link" href="https://github.com/KAVANAMP" target="_blank" rel="noopener">
+              <span class="meta-icon">gh</span> GitHub
+            </a>
+            <a class="meta-link" href="mailto:kavanapacharya@gmail.com">
+              <span class="meta-icon">@</span> Email
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo" data-aos="zoom-in">
+          <img src="assets/profile.jpeg" alt="Kavana M P — profile photo" onerror="this.src='https://via.placeholder.com/320x320?text=Profile'">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div>
+            <p>
+              I'm a Computer Science and Engineering graduate from <strong>Shree Devi Institute of Technology</strong>, Mangalore.
+              I have a strong foundation in web development and a passion for software engineering. I enjoy building responsive web applications using HTML, CSS, JavaScript, and React, along with Android apps using Kotlin and Jetpack Compose, and continuously improving my technical and problem-solving skills. I'm seeking full-time SDE roles where I can grow as a software engineer.
+            </p>
+            <ul class="about-list">
+              <li><strong>Education:</strong> B.E. in Computer Science & Engineering — CGPA 8.7</li>
+              <li><strong>Pre-U:</strong> PCMB — 92.33%</li>
+              <li><strong>High School:</strong> 90.4%</li>
+            </ul>
+          </div>
+          <div class="card small-card">
+            <h3>Quick Facts</h3>
+            <p><strong>Location:</strong> Bengaluru, India</p>
+            <p><strong>Open to:</strong> Full-time SDE roles</p>
+            <p><strong>Hobbies:</strong> Drawing, Reading, Cooking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt" data-aos="fade-up">
+      <div class="container">
+        <h2>Experience</h2>
+        <p class="section-sub">Internships where I applied what I learned to real products.</p>
+
+        <div class="timeline">
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="160">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="timeline-head">
+                <h3>Java Full Stack Intern</h3>
+                <span class="timeline-date">Feb 2026 – Present</span>
+              </div>
+              <p class="timeline-org">Besant Technologies</p>
+              <p>
+                Gained hands-on experience with Java-based full stack development,
+                building a foundation in backend logic, database integration, and
+                end-to-end application structure.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Java</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">Frontend Technologies</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="timeline-head">
+                <h3>Android Developer Intern</h3>
+                <span class="timeline-date">Feb 2026 – May 2026</span>
+              </div>
+              <p class="timeline-org">MindMatrix</p>
+              <p>
+                Built <strong>Grama Angana</strong>, a Community Hall Management System,
+                as a capstone project — covering Android Studio setup, Gradle and Hilt
+                configuration, Firebase Firestore with security rules, and an MVVM
+                architecture using Kotlin Coroutines and StateFlow. Also completed
+                hands-on modules in Salesforce Trailhead, Google Codelabs, and Google AI Studio.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Kotlin</span>
+                <span class="chip">Jetpack Compose</span>
+                <span class="chip">Firebase</span>
+                <span class="chip">MVVM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="80">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="timeline-head">
+                <h3>Full Stack Development Intern</h3>
+                <span class="timeline-date">Aug 2025 – Sept 2025</span>
+              </div>
+              <p class="timeline-org">Corizo Edutech</p>
+              <p>
+                Worked across the stack on web application development, strengthening
+                practical skills in building and connecting frontend interfaces with
+                backend logic and databases.
+              </p>
+              <div class="chip-row">
+                <span class="chip">HTML/CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">Full Stack</span>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt" data-aos="fade-up">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="section-sub">Technologies I build with, organized by where I use them.</p>
+
+        <div class="skills-cloud">
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+            <div class="skill-category-head">
+              <span class="skill-icon">🌐</span>
+              <h4>Web Development</h4>
+            </div>
+            <div class="chip-row">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">React JS</span>
+              <span class="chip">Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="80">
+            <div class="skill-category-head">
+              <span class="skill-icon">📱</span>
+              <h4>Android Development</h4>
+            </div>
+            <div class="chip-row">
+              <span class="chip">Kotlin</span>
+              <span class="chip">Jetpack Compose</span>
+              <span class="chip">MVVM</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">Coroutines</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="160">
+            <div class="skill-category-head">
+              <span class="skill-icon">💻</span>
+              <h4>Languages</h4>
+            </div>
+            <div class="chip-row">
+              <span class="chip">Java</span>
+              <span class="chip">Python</span>
+              <span class="chip">C</span>
+              <span class="chip">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="240">
+            <div class="skill-category-head">
+              <span class="skill-icon">🛠️</span>
+              <h4>Databases & Tools</h4>
+            </div>
+            <div class="chip-row">
+              <span class="chip">MySQL</span>
+              <span class="chip">Firebase Firestore</span>
+              <span class="chip">Git & GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">Android Studio</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card" data-aos="fade-up">
+            <img src="assets/grama.jpeg" alt="Grama Angana" onerror="this.src='https://via.placeholder.com/600x340?text=Grama+Angana'">
+            <div class="project-body">
+              <h3>Grama Angana</h3>
+
+              <p>
+                Built a full-stack Android solution to digitize community hall
+                bookings for rural villages — eliminating scheduling conflicts
+                with real-time Firestore sync and giving admins a dedicated
+                dashboard to manage halls, events, and reservations through
+                role-based access.
+              </p>
+
+              <div class="project-meta">
+                <span>Android • Kotlin • Firebase</span>
+
+                <div class="project-buttons">
+                  <a
+                    href="https://github.com/KAVANAMP/Grama-Angana"
+                    target="_blank"
+                    class="btn-sm"
+                  >
+                    View Code
+                  </a>
+
+                  <button class="btn-sm" data-project="grama">
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/braille.png"
+                 alt="Braille To Text & Voice Translator"
+                 onerror="this.src='https://via.placeholder.com/600x340?text=Braille+Translator'">
+
+            <div class="project-body">
+              <h3>Braille To Text & Voice Translator</h3>
+              <p>
+                Built an assistive tool to make printed Braille readable to
+                sighted users — using OpenCV to detect dot patterns from
+                images and converting them into text and spoken audio, with
+                accessibility as the core design goal rather than an
+                afterthought.
+              </p>
+
+              <div class="project-meta">
+                <span>Python • OpenCV • TTS</span>
+
+                <div class="project-buttons">
+                  <a
+                    href="https://github.com/KAVANAMP/Braille-To-Text-and-voice-Translator"
+                    target="_blank"
+                    class="btn-sm"
+                  >
+                    View Code
+                  </a>
+
+                  <button class="btn-sm" data-project="braille">
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section alt" data-aos="fade-up">
+      <div class="container">
+        <h2>Certifications & Workshops</h2>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <h4>Frontend Web Development — Infosys Springboard</h4>
+            <p>Completed certification focused on modern frontend skills and responsive web development.</p>
+          </div>
+
+          <div class="cert-card">
+            <h4>Machine Learning — Simplilearn</h4>
+            <p>Training program covering basics of ML and practical projects.</p>
+          </div>
+
+          <div class="cert-card">
+            <h4>Introduction to Gemini for Google Workspace — Google Cloud</h4>
+            <p>Hands-on introduction to using Gemini AI tools across Google Workspace apps.</p>
+          </div>
+
+          <div class="cert-card">
+            <h4>Full Stack Development Workshop — Wayspire</h4>
+            <p>Practical workshop covering end-to-end full stack application development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Let's build something amazing together.</h3>
+            <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!</p>
+            <p><strong>Email:</strong> <a href="mailto:kavanapacharya@gmail.com">kavanapacharya@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kavana-p-acharya-480617339" target="_blank">Kavana P Acharya</a></p>
+          </div>
+
+          <!-- Replace YOUR_FORM_ID with your Formspree form ID: https://formspree.io -->
+          <form class="card contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button class="btn" type="submit">Send Message</button>
+              <a class="btn-ghost" href="assets/Kavana_CV.pdf" download>Download Resume</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <h3>Kavana M P</h3>
+        <p class="copyright">
+          © <span id="year">2026</span> Kavana M P. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Project Modal (hidden) -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- AI Chat Widget -->
+  <div id="chat-widget">
+    <button id="chat-toggle" aria-label="Ask about Kavana">
+      <span class="chat-toggle-icon">💬</span>
+      <span class="chat-toggle-label">Ask about me</span>
+    </button>
+
+    <div id="chat-panel" class="hidden">
+      <div class="chat-header">
+        <div>
+          <h4>Ask about Kavana</h4>
+          <p>AI assistant · trained on my portfolio</p>
+        </div>
+        <button id="chat-close" aria-label="Close chat">✕</button>
+      </div>
+
+      <div id="chat-messages">
+        <div class="chat-msg chat-msg-bot">
+          Hi! I can answer questions about Kavana's skills, projects, and experience. Try asking something like "What's her strongest project?"
+        </div>
+      </div>
+
+      <div class="chat-suggestions" id="chat-suggestions">
+        <button class="chat-suggestion">What's her strongest project?</button>
+        <button class="chat-suggestion">Does she know Firebase?</button>
+        <button class="chat-suggestion">What internships has she done?</button>
+      </div>
+
+      <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Type a question..." maxlength="500" autocomplete="off" required />
+        <button type="submit" id="chat-send" aria-label="Send">➤</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
